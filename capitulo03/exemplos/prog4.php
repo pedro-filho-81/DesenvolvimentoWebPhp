@@ -23,7 +23,9 @@
       // variáveis recebem valores
       $time = "Grêmio";
       $ano = 1983;
+      // interpolação, variável frase1 recebe time
       $frase1 = "O $time é o melhor time de futbol do mundo.";
+      // interpolação, variável frase2 recebe var time e var ano
       $frase2 = "O $time foi campeão do mundo em $ano";
       // exibe resultados
       echo"<h3>$frase1</h3>";
