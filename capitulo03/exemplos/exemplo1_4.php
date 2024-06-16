@@ -11,19 +11,28 @@
    </style>
 </head>
 <body>
-   <?php 
-      $num = 5000; // var global
+   <h1>Escopo de Variável</h1>
 
-      // cria função
+   <?php // inicio super tag html PHP
+      // var global pode ser vista por todos
+      $num = 5000; 
+
+      // cria função sem parâmetro
       function testa_escopo()
       {
-         $num = 5; // var interna
-         // exibe
+         // variável interna só pode ser vista apenas pela função
+         $num = 5;
+         
+         // exibe a variável interna
          echo 'Na função $num = '. $num . "<br>";
-      }
-      // exibe
+      } // end function
+
+      // exibe o valor da variável global
       echo 'fora da função $num = '. $num . "<br>";
+
+      // exibe o valor da variável interna num
       testa_escopo(); // chama função
-   ?>
+   ?> <!-- end super tag html PHP -->
+
 </body>
 </html>
